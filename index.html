@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>HealthHive — App Listing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0f1b22;--card:#0b0f10;--muted:#9fb3b8;--accent:#50c7a2;--white:#ffffff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,Arial;background:linear-gradient(180deg,#eaf8f2,#ffffff);color:var(--white);-webkit-font-smoothing:antialiased}
+  .hero{background:linear-gradient(90deg,#c7f3e4 0%, rgba(255,255,255,0.15) 60%), url('screenshots/715ac765.png') right/cover no-repeat; padding:48px 32px 64px; border-bottom-left-radius:18px;border-bottom-right-radius:18px;box-shadow:0 6px 28px rgba(4,20,25,0.12);}
+  .container{max-width:1200px;margin:24px auto;padding:0 20px;}
+  .hero-inner{display:flex;gap:28px;align-items:flex-start;max-width:1200px;}
+  .app-icon{width:152px;height:152px;border-radius:28px;background:#fff;flex:0 0 152px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.15);overflow:hidden}
+  .app-icon img{width:100%;height:100%;object-fit:cover}
+  .meta{flex:1;color:#062023;padding-top:6px}
+  .meta h1{font-family:Montserrat,Inter;font-size:44px;margin:0 0 6px;color:#053233}
+  .meta p{margin:6px 0;color:#0b3b36;font-weight:600}
+  .meta .sub{color:#053233;margin-top:8px;font-weight:600}
+  .hero-actions{margin-left:auto;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+  .install-btn{background:#007aff;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,122,255,0.18)}
+  .share-btn{background:rgba(255,255,255,0.85);color:#023b34;padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid rgba(0,0,0,0.06)}
+  .meta-row{display:flex;gap:28px;align-items:center;margin-top:22px;color:#013a34;font-weight:600}
+  .meta-col{background:rgba(255,255,255,0.9);padding:14px 18px;border-radius:12px;color:#052b2a;min-width:120px;text-align:center;box-shadow:0 8px 20px rgba(3,27,24,0.06)}
+  /* Black info strip */
+  .info-strip{background:#0a0a0a;padding:28px;border-radius:8px;margin-top:20px;color:#fff}
+  .info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start}
+  .info-item{text-align:center}
+  .info-item .title{font-size:13px;opacity:0.7;margin-bottom:8px}
+  .info-item .value{font-size:22px;font-weight:700}
+  .screenshots{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:20px}
+  .shot{background:#fff;padding:12px;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(3,10,15,0.12);height:360px;overflow:hidden}
+  .shot img{max-width:100%;max-height:100%;border-radius:14px;object-fit:contain}
+  footer{margin-top:30px;padding:18px 0;text-align:center;color:#023b34;font-weight:700}
+  @media(max-width:1000px){.screenshots{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:repeat(2,1fr)}.hero-inner{flex-direction:column;align-items:center}.hero-actions{align-items:center}}
+  @media(max-width:600px){.hero{padding:22px}.meta h1{font-size:28px}.shot{height:220px}}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container hero-inner">
+      <div class="app-icon"><img src="logo.png" alt="HealthHive icon"></div>
+      <div class="meta">
+        <h1>HealthHive</h1>
+        <p>Manage your health better.</p>
+        <div class="sub">Only for iPhone · Free · In‑App Purchases · Designed for iPhone</div>
+
+        <div class="meta-row" aria-hidden="true">
+          <div class="meta-col">Category<br><strong>Health & Fitness</strong></div>
+          <div class="meta-col">Developer<br><strong>SIMATS</strong></div>
+          <div class="meta-col">Language<br><strong>EN</strong></div>
+          <div class="meta-col">Size<br><strong>53.2 MB</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#" class="install-btn" onclick="alert('Not supported on your device')">Install</a>
+        <a href="#" class="share-btn" onclick="navigator.share&&navigator.share({title:'HealthHive',text:'HealthHive - Manage your health better',url:location.href})">Share</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="info-strip">
+        <div class="info-grid">
+          <div class="info-item"><div class="title">3 Ratings</div><div class="value">—</div></div>
+          <div class="info-item"><div class="title">Ages</div><div class="value">4+</div></div>
+          <div class="info-item"><div class="title">Category</div><div class="value">Health & Fitness</div></div>
+          <div class="info-item"><div class="title">Developer</div><div class="value">SIMATS</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="screenshots" aria-label="App screenshots">
+      <div class="shot"><img src="screenshots/715ac765.png" alt="screenshot 1"></div>
+      <div class="shot"><img src="screenshots/29dff1b1.png" alt="screenshot 2"></div>
+      <div class="shot"><img src="screenshots/fdd5893a.png" alt="screenshot 3"></div>
+      <div class="shot"><img src="screenshots/561a289a.png" alt="screenshot 4"></div>
+    </div>
+
+    <div style="margin-top:18px;display:flex;gap:18px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:320px;background:#fff;padding:18px;border-radius:12px;color:#062023">
+        <h3 style="margin-top:0">About</h3>
+        <p><strong>HealthHive</strong> helps you track vital health readings such as heart rate, blood sugar, blood pressure, and blood oxygen levels. View trends, receive personalized insights, set reminders, and keep important health records securely.</p>
+      </div>
+      <div style="width:320px;min-width:240px;background:#fff;padding:18px;border-radius:12px;color:#062023">
+        <h3 style="margin-top:0">Get</h3>
+        <p style="margin:0">Available now</p>
+        <div style="margin-top:12px"><a href="#" onclick="alert('Not supported on your device')" style="background:#007aff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700">Install</a></div>
+      </div>
+    </div>
+
+    <footer>© SIMATS</footer>
+  </div>
+</body>
+</html>
